@@ -72,9 +72,10 @@ def comLine():
         select(list(data['notes'].keys()).index(pos))
         
     
-    print("KinetiNotes 0.1.0\n")
+    print("KinetiNotes 0.1.0")
+    print("   |")
     for num, i in enumerate(data['notes']):
-        print(f"\t[{num}] {i}")
+        print(f"   +---[{num}] {i}")
 
     menu = f"\n(help)\n(exit)\n"
     print(menu)
