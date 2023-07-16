@@ -1,6 +1,6 @@
 import json
 import os
-from datetime import datetime
+import sys
 
 # load Data
 with open("/home/kinet/Desktop/Kinetikus/notesApp/notes.json", "r") as f:
@@ -29,6 +29,8 @@ def comLine():
             save()
             clear()
             comLine()
+        if command == 'exit':
+            sys.exit(0)
 
 
     def select(n):
