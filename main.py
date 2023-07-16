@@ -3,7 +3,7 @@ import os
 import sys
 
 # load Data
-with open("/home/kinet/Desktop/Kinetikus/notesApp/notes.json", "r") as f:
+with open("notes.json", "r") as f:
     data = json.load(f)
     data: dict
 
